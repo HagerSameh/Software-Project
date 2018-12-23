@@ -7,6 +7,7 @@ package dawarly;
 
 import static dawarly.AddItem.Device_Controller;
 import static dawarly.DataBase.DeviceItemDB;
+import static dawarly.ItemModel.setFounderInfo;
 
 
 /**
@@ -60,16 +61,12 @@ public class Device extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField2.setText(" ");
 
         jTextField3.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField3.setText(" ");
 
         jTextField4.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField4.setText(" ");
 
         jTextField5.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField5.setText(" ");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jLabel7.setText("  ADD Device");
@@ -109,7 +106,6 @@ public class Device extends javax.swing.JFrame {
         jLabel5.setText("Enter Brand Name");
 
         jTextField1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField1.setText(" ");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -120,7 +116,6 @@ public class Device extends javax.swing.JFrame {
         jLabel6.setText("Enter the Type of Device");
 
         jTextField6.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jTextField6.setText(" ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -210,6 +205,7 @@ public class Device extends javax.swing.JFrame {
             this.hide();
             
             setData();
+            setFounderInfo();
         }        
     }//GEN-LAST:event_jButton1ActionPerformed
 

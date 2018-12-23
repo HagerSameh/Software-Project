@@ -10,6 +10,8 @@ public class Item
             BrandName ,
             Type ,
             PersonName;
+    
+    String username , email ;
 
     public String getPersonName() {
         return PersonName;
